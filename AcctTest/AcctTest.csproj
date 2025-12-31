@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcctMan.cs" />
+    <Compile Include="DataStream.cs" />
     <Compile Include="Encrypt.cs" />
     <Compile Include="GlobVar.cs" />
     <Compile Include="Program.cs" />
