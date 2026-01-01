@@ -10,9 +10,8 @@ namespace AcctTest
   {
     // Environment Variables
     public static string ExtLoc = Environment.ExpandEnvironmentVariables("%ProgramW6432%")+"/AcctTest";
-    public static bool ExtLocFound = false;
 
-    public static String UserFile = "";
-    public static string PassFile = "";
+    public static String UserFile = ExtLoc+"/user.txt";
+    public static string PassFile = ExtLoc+"/pass.txt";
   }
 }

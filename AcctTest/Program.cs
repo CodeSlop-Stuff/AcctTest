@@ -13,10 +13,6 @@ namespace AcctTest
     {
       // Check for system files folder. Runs twice due to nature of the function.
       DataStream.checkdir();
-      if (GlobVar.ExtLocFound == false)
-      {
-        DataStream.checkdir();
-      }
 
       // Temporary exit, will be replaced later but for now ensures window doesnt close instantly
       Console.ReadKey();
