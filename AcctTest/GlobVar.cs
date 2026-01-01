@@ -9,7 +9,10 @@ namespace AcctTest
   internal class GlobVar
   {
     // Environment Variables
-    public static string ExtLoc = Environment.ExpandEnvironmentVariables("%ProgramW6432%");
+    public static string ExtLoc = Environment.ExpandEnvironmentVariables("%ProgramW6432%")+"/AcctTest";
     public static bool ExtLocFound = false;
+
+    public static String UserFile = "";
+    public static string PassFile = "";
   }
 }
