@@ -1,1 +1,1 @@
-slop temp
+CLI test project to implement a rudimentary login system with accounts and passwords utilising SHA256 encryption and password salting.
