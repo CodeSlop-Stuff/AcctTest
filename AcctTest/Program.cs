@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace AcctTest
 {
@@ -10,7 +11,10 @@ namespace AcctTest
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Slop Test Begin");
+      DataStream.checkdir();
+      DataStream.checkdir();
+
+      Thread.Sleep(999999999);
     }
   }
 }
