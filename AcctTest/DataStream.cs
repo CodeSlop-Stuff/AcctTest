@@ -12,10 +12,13 @@ namespace AcctTest
   {
     public static void checkdir()
     {
+      // if directory exists, set variable to true and print that it exists.
       if (Directory.Exists(GlobVar.ExtLoc+"/AcctTest"))
       {
         Console.WriteLine($"{GlobVar.ExtLoc}/AcctTest Exists!");
+        GlobVar.ExtLocFound = true;
       }
+      // if directory doesnt exist, print that it doesnt exist then create the directory.
       else
       {
         Console.WriteLine($"{GlobVar.ExtLoc}/AcctTest Does not exist!");

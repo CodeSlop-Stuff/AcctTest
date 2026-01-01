@@ -11,10 +11,15 @@ namespace AcctTest
   {
     static void Main(string[] args)
     {
+      // Check for system files folder. Runs twice due to nature of the function.
       DataStream.checkdir();
-      DataStream.checkdir();
+      if (GlobVar.ExtLocFound == false)
+      {
+        DataStream.checkdir();
+      }
 
-      Thread.Sleep(999999999);
+      // Temporary exit, will be replaced later but for now ensures window doesnt close instantly
+      Console.ReadKey();
     }
   }
 }

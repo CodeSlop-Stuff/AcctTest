@@ -8,6 +8,8 @@ namespace AcctTest
 {
   internal class GlobVar
   {
+    // Environment Variables
     public static string ExtLoc = Environment.ExpandEnvironmentVariables("%ProgramW6432%");
+    public static bool ExtLocFound = false;
   }
 }
