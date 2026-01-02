@@ -36,5 +36,28 @@ namespace AcctTest
         File.CreateText(GlobVar.PassFile);
       }
     }
+
+    public static void WriteFile(string file, int line, string data)
+    {
+      StreamWriter Write = new StreamWriter(file);
+      for (int i = 0; i < line-1; i++)
+      {
+        StreamWriter WriteTemp = new StreamWriter(GlobVar.ExtLoc + "/tmp.txt");
+        WriteTemp.WriteLine(ReadFile(file, i));
+        WriteTemp.Close();
+        for (int j = 0; j < line - j; j++)
+        {
+          Write.Write(ReadFile(GlobVar.ExtLoc + "/tmp.txt", j));
+        }
+      }
+      Write.WriteLine(data);
+      Write.Close();
+    } 
+
+    public static string ReadFile(string file, int line)
+    {
+      string text = File.ReadLines(file).Skip(line-1).Take(1).First();
+      return(text);
+    }
   }
 }
